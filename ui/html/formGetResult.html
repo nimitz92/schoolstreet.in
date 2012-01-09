@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<script type="text/javascript" src="ui/js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="ui/js/jquery-ui-1.8.13.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="ui/css/redmond/jquery-ui-1.8.13.custom.css" />
+		<script>
+			jQuery(document).ready(function($) {
+			$('#date').datepicker({dateFormat : 'dd-mm-yy'});
+			})
+		</script>
+		<style type="text/css">
+			div.ui-datepicker{
+ 				font-size:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="DisplayResult.php" method="POST">
+			<p class="form-label">Roll No<br />
+			<input type="text" name="rollno" /></p>
+			
+			<p class="form-label">Class<br />
+			<select name="class">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select></p>
+				
+			<p class="form-label">Section<br />
+			<select name="section">
+				<option value="A">A</option>
+				<option value="B">B</option>
+				<option value="C">C</option>
+				<option value="D">D</option>
+				<option value="E">E</option>
+			</select></p>
+			
+			<p class="form-label">School<br />
+			<select name="school">
+				<option>DPS</option>
+				<option>AMITY</option>
+			</select></p>
+			
+			<p class="form-label">Date Of Birth<br />
+			<input type="text" name="dob" id="date" />
+			
+			<br />
+			<input type="submit" value="Submit" name="getresult" />
+		</form> 
+	<body>
+</html>
