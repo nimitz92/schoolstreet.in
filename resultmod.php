@@ -1,8 +1,8 @@
 <html>
 <?php 
 	session_start();
-	$_SESSION['uid'] = 0;
-	$_SESSION['schoolid'] = 0;
+	$_SESSION['uid'] = 2;
+	$_SESSION['schoolid'] = 1;
 ?>
 	<head>
 		<script type="text/javascript" src="ui/js/jquery.js"></script>
@@ -22,7 +22,7 @@
 	<body>
 		<a href="ui/html/formGetResult.html" rel="facebox">Result</a>
 		<a href="ui/html/formEnterMarks.html" rel="facebox">Enter Results</a>
-		<a href="MyMsg.php" rel="facebox">Pending Messages</a>
+		<a href="core/MyMsg.php" rel="facebox">Pending Messages</a>
 	</body>
 </html>		
 

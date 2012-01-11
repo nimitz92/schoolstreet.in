@@ -23,7 +23,7 @@
 	
 	$examid = $mysql->getAutoId();
 	
-	$list = $mysql->getResult("select stuid, rollno, name from students where class=$class and section = $section and school = $school;");
+	$list = $mysql->getResult("select stuid, rollno, name from students where class=$class and section = '$section' and school = $school;");
 	if($list===false){
 		echo "Error in Database @ (2).EnterMarks.php ".$mysql->getError();
 		exit;
@@ -36,15 +36,16 @@
 		<body>
 		<form action="MarkList.php" method="POST">
 			<table>
-				<th>
+				<thead>
 					<td>Roll No</td>
 					<td>Name</td>
 					<td>Max Marks</td>
 					<td>Marks Obtained</td>
-				</th>
+				</thead>
 				
 	';
 	$i=0;
+	//echo $list[0][0];
 	foreach($list as $student){
 		echo '
 			<tr>
@@ -63,8 +64,8 @@
 		<input type="hidden" value="'.$i.'" name="length" />
 		<input type="hidden" value="'.$examid.'" name="examid" />
 		<input type="hidden" value="'.$class.'" name="class" />
-		<input type="hidden" value="'.$section.'" name="section" />
-		<input type="submit" value="Submit" name="marklist" /></tr>
+		<input type="hidden" value="'.$section.'" name="section" /></tr>
+		<input type="submit" value="Submit" name="marklist" />
 		</table>
 		</form>
 	';

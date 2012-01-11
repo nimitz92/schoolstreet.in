@@ -1,10 +1,11 @@
 <?php
-	require_once "../init.php"
+	require_once "../init.php";
 	if(!isset($_POST['marklist'])){
 		header("Location:$application_url");
 		exit;
 	}
-	
+	session_start();
+	$teacherid = $_SESSION['uid'];
 	$examid = $_POST['examid'];
 	$count = $_POST['length'];
 	for($i=0;$i<$count;$i++){
@@ -21,7 +22,7 @@
 	$class = $_POST['class'];
 	$section = $_POST['section'];
 	
-	$query = $mysql->getResult("select teacherid from teachers where ctclass = $class and ctsection = $section;");
+	$query = $mysql->getResult("select teacherid from teachers where ctclass = $class and ctsection = '$section';");
 	if($query===false){
 			echo "Error in Database @ (2).MarkList.php ".$mysql->getError();
 			exit;
@@ -37,12 +38,12 @@
 		$approve=0;
 		
 		$to = $classteacher;
-		$from = $teacher;
+		$from = $teacherid;
 		$messagetype = $mysql->escape("RESULT APPROVAL REQUEST");
 		$time = time();
 		$status = 0; 
 		
-		$send = $mysql->getResult("insert into messages (sender, receiver, messagetype, msgdate, status) values ($to, $from, $messagetype, $time, $status);",true);
+		$send = $mysql->getResult("insert into messages (sender, receiver, msgtype, msgdate, status) values ($from, $to, '$messagetype', $time, $status);",true);
 		if($send===false){
 			echo "Error in Database @ (3).MarkList.php ".$mysql->getError();
 			exit;
