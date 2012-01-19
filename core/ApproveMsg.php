@@ -37,8 +37,30 @@
 		echo "Error in database @(4).ApproveMsg.php".$mysql->getError();
 		exit;
 	}
-	echo "<head><title>Approve Result</title></head><body>";
-	echo "<h4>Exam Name :: ".$result[0]['examname']."<br />";
+	echo "<head><title>Approve Result</title>";
+	echo '<script type="text/javascript" src="../ui/js/jquery-1.6.1.min.js"></script>';
+	echo '<script>
+			jQuery(document).ready(function($) {
+			$(".approve").hide();
+			$(".reject").hide();
+			})
+		</script>';
+
+	echo '<script type=text/javascript>
+		function approve() {
+			$(".reject").hide();
+			$(".approve").show();
+			return true;
+			}
+		</script>';
+	echo '<script type=text/javascript>
+		function reject() {
+			$(".approve").hide();
+			$(".reject").show();
+			return true;
+			}
+		</script>';
+	echo "</head><body><h4>Exam Name :: ".$result[0]['examname']."<br />";
 	echo "Session :: ".$result[0]['session']."<br />";
 	echo "Subject :: ".$result[0]['subject']."<br />";
 	echo "Class :: ".$result[0]['class']."&nbsp;&nbsp;&nbsp;Section :: ".$result[0]['section']."<br />";
@@ -63,6 +85,23 @@
 		';
 	}
 	echo "</table>";
+	echo "<button type='submit' name='approve' onclick='return approve()'>Approve</button>";
+	echo "<button type='submit' name='Reject' onclick='return reject()'>Reject</button>";
+	echo "
+		<div class='approve'>
+		<form action='Result/Approve.php' method='post'>
+		<input type='hidden' name='msgid' value='".$msgid."' />
+		<input type='checkbox' name='sms' />Send SMS to parents<br />
+		<input type='checkbox' name='publish' />Publish on web<br />
+		<input type='submit' value='Proceed!' name='approve' /><br />
+		</form></div>";
+	echo "
+		<div class='reject'>
+		<form action='Result/Reject.php' method='post'>
+		<input type='hidden' name='msgid' value='".$msgid."' />
+		Message:<textarea name='msg' ></textarea><br />
+		<input type='submit' value='Proceed!' name='reject' /><br />
+		</form></div></body>";
 	
 	
 	

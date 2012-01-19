@@ -13,7 +13,16 @@
 	$mysql_pass 			= 	"shivang";
 	$mysql_host 			= 	"localhost";
 	
+	/**
+	 * Production
 	
+	
+	$mysql_database 		= 	"a3054126_sstreet";
+	$mysql_user 			= 	"a3054126_root";
+	$mysql_pass 			= 	"himanshu92@school";
+	$mysql_host 			= 	"mysql12.000webhost.com";
+	
+	**/
 	
 	
 	/** 
