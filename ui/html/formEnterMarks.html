@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="ui/css/redmond/jquery-ui-1.8.13.custom.css" />
 		<script>
 			jQuery(document).ready(function($) {
-			$('#date').datepicker();
+			$('#date').datepicker({ dateFormat: 'yyyy-mm-dd' });
 			})
 		</script>
 		<style type="text/css">
@@ -15,7 +15,7 @@
 		</style>
 	</head>
 	<body>
-		<form action="././core/EnterMarks.php" method="POST">
+		<form action="././core/Result/EnterMarks.php" method="POST">
 			<p class="form-label">Exam Name<br />
 			<select name="examname">
 				<option>Mid Term Exam</option>
