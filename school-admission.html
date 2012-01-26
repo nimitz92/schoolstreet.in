@@ -1,0 +1,450 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+            <title>The School Street</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="css/style_pages_ie.css" />
+    <![endif]-->
+	<link type="text/css" href="./ui/js/jquery-ui-1.8.17/css/ui-lightness/jquery-ui-1.8.17.custom.css" rel="Stylesheet" />	
+	<script type="text/javascript" src="./ui/js/jquery-ui-1.8.17/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="./ui/js/jquery-ui-1.8.17/js/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="./ui/js/jquery.tools.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+   
+		
+		
+		
+		
+		$(".mmodalInput").click(function(){
+		
+			$(".modalInput").overlay({mask:{color:'#000000',loadSpeed:200,opacity:0.4},closeOnClick:true});
+			
+		
+		}
+		);
+		$(".modalInput").overlay({
+
+			// some mask tweaks suitable for modal dialogs
+			mask: {
+				color: '#000000',
+				loadSpeed: 200,
+				opacity: 0.4
+			},
+
+			closeOnClick: true
+		});
+	
+	 
+	 
+			 
+		$("#add-result-form form").submit(function(e) {
+
+			// close the overlay
+			triggers.eq(1).overlay().close();
+
+			// get user input
+			var input = $("input", this).val();
+
+			// do something with the answer
+			triggers.eq(1).html(input);
+
+			// do not submit the form
+			return e.preventDefault();
+		});
+	
+		$('#date').datepicker();
+	
+	});
+		
+	</script>
+
+
+  </head>
+  <body>
+	<div id="page">
+		<div id="page-wrapper">
+			<div id="head">
+				<table>
+				<tr>
+					<td>
+					<h1 class="not-on-front-page"><a href="index.html">the School Street</a><h1>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<h5><a href="school-profile.html">Delhi Public School</a></h5>
+					</td>
+				</tr>
+				</table>
+			</div>
+			<div id="primary-menu">
+				<ul class="primary-menu-list">
+					<li class="primary-menu-list-element"><a class="primary-menu-href" href="school-profile.html" rel="#abc"><span>School Frontpage</span></a><div class="modal" id="abc">sdsds</div></li>
+					<li class="primary-menu-list-element news"><a class="primary-menu-href news" href="">
+					
+						<span>News</span></a>
+						<div id="submenu">
+							<div class="submenu-wrapper">
+								<h2>Recent News(Delhi Public School)</h2>
+								<div class="submenu-content">
+								<table class="submenu-columns-news">
+									<tr class="top">
+										<td class="left crop">
+											<span></span><img class="news-thumbnail" src="./ui/img/news-images/news-image-1.jpg" />
+										</td>
+										<td class="right">
+											<ul class="submenu-list">
+												<li class="submenu-list-element">
+													<div class="sub-story">
+													<a class="submenu-href" href="">USIEF-IIE University Fair 2011</a>
+													<div class="substory-content">
+														The much awaited USIEF fair kicked of the on right footing. More than expected aspirants ...
+													</div>	
+													</div>
+												</li>
+												<li class="submenu-list-element">
+													<div class="sub-story">
+													<a class="submenu-href" href="">Behaviour Management and Discipline Strategy</a>
+													<div class="substory-content">
+														The Behaviour Management and Discipline (BM&D) strategy is an initiative of the Government and the Department of Education and Training and has been established through strong collaboration with the Australian Education Union, Western Australian branch. 
+
+													</div>	
+													</div>
+												</li>
+												<li class="submenu-list-element">
+													<div class="sub-story">
+													<a class="submenu-href" href="">USIEF-IIE University Fair 2011</a>
+													<div class="substory-content">
+														The much awaited USIEF fair kicked of the on right footing. More than expected aspirants ...
+													</div>	
+													</div>
+												</li>
+												
+											</ul>
+										</td>
+																				
+									</tr>
+									<tr class="bottom">
+										<td>
+										</td>
+										<td class="thick-top-border">
+											<a class="blue-dark" href=""> FIND MORE STORIES </a>
+										</td>
+									</tr>
+								</table>
+								
+								</div>
+							</div>	
+						</div>
+					
+					</li>
+						
+					
+					<li class="primary-menu-list-element"><a class="primary-menu-href" href=""><span>School Forums</span></a></li>
+					<li class="primary-menu-list-element"><a class="primary-menu-href" href=""><span>About School</span></a></li>
+					<li class="primary-menu-list-element"><a class="primary-menu-href" href=""><span>Contact School</span></a></li>
+				</ul>
+			</div>
+			<div id="secondary-menu">
+				<ul class="secondary-menu-list">
+					<li class="secondary-menu-list-element"><a class="secondary-menu-option" href=""><span>Founders</span></a></li>
+					<li class="secondary-menu-list-element"><a class="secondary-menu-option" href=""><span>Staff Information</span></a></li>
+					<li class="secondary-menu-list-element"><a class="secondary-menu-option" href=""><span>Fees</span></a></li>
+					<li class="secondary-menu-list-element">
+						<a class="secondary-menu-option" href=""><span>Result</span></a>
+						
+						<div id="submenu">
+							<div class="submenu-wrapper">
+								<h2>Recent Result Updates</h2>
+								<div class="submenu-content">
+								<table class="submenu-columns-result">
+									<tr class="top">
+										<td class="left">
+											<ul class="submenu-list">
+												<li class="submenu-list-element">
+													<div class="sub-story">
+													<a class="submenu-href" href="">Half-Yearly Results(NOV 2011) for classes V to VIII</a>
+													<div class="substory-content-disabled">
+													</div>	
+													</div>
+												</li>
+												<li class="submenu-list-element">
+													<div class="sub-story">
+													<a class="submenu-href" href="">Quarterly Results(SEP 2011) for classes V to VIII</a>
+													<div class="substory-content-disabled">
+													</div>	
+													</div>
+												</li>
+												<li class="submenu-list-element">
+													<div class="sub-story">
+													<a class="submenu-href" href="">Admission Results(APR 2011) for classes I to V</a>
+													<div class="substory-content-disabled">
+													</div>	
+													</div>
+												</li>
+												
+											</ul>
+										</td>
+										<td class="right column-for-menu"> 
+												<p>
+												<a class="modalInput blue-dark"  href="" rel="#add-result-form">Enter Result</a>
+											
+												<div class="modal" id="add-result-form">
+													<h2>Enter Results</h2>
+													<form>
+													<table>
+														<tr>															
+															<td>Exam Name</td>
+															<td>
+																<select class="dropdown" name="add-result-exam-name">
+																<option value="">Unit Test</option>
+																<option value="">Quarterly Exam</option>
+																<option value="">Annual Exam</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Session</td>
+															<td>http://my.oracle.com/site/hr/RegionalSites/India/India_Handbook/leave_travel/leave_travel
+
+																<select class="dropdown" name="add-result-session">
+																<option value="">Unit Test</option>
+																<option value="">Quarterly Exam</option>
+																<option value="">Annual Exam</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Date of Exam</td>
+															<td>
+															<input type="text" name="date" id="date" />
+															</td>
+														</tr>
+														<tr>
+															<td>Subject</td>
+															<td>
+																<select class="dropdown" name="add-result-subject">
+																<option value="">Physics</option>
+																<option value="">Chemistry</option>
+																<option value="">Biology</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Class</td>
+															<td>
+																<select class="dropdown" name="add-result-class">
+																<option value="">V</option>
+																<option value="">VI</option>
+																<option value="">VII</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Section</td>
+															<td>
+																<select class="dropdown" name="add-result-section">
+																<option value="">A</option>
+																<option value="">B</option>
+																<option value="">C</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Max Marks</td>	
+															<td>
+																<input class="" type="textbox" name="add-result-max-marks" value="" />
+															</td>
+														</tr>
+														<tr>
+															<td>
+															<input class="submit" type="submit" name="submit-result" value="Submit Result" />
+															</td>
+														</tr>
+													</table>
+													</form>
+												</div>
+												</p>
+												<p>
+												<a class="blue-dark" href="">Enter Roll Number to view result</a>
+												</p>
+												<p>
+												<a class="blue-dark" href="">Enter class to view result</a>
+												</p>
+										</td>
+																				
+									</tr>
+									<tr>
+										<td ><p></p>
+										</td>
+									</tr>
+									<tr class="bottom">
+										<td class="thick-top-border">
+											<a class="blue-dark" href=""> FIND PREVIOUS RESULTS </a>
+										</td>
+										<td class="thick-top-border">
+										</td>
+									</tr>
+								</table>
+								
+								</div>
+							</div>	
+						</div>
+					</li>
+					<li class="secondary-menu-list-element"><a class="secondary-menu-option selected" href="school-admission.html"><span>Admission</span></a></li>
+				</ul>
+			</div>
+			
+			<div id="content">
+				<div class="content-main">
+					<h2>Admission</h2>
+					<div class="cover-story">
+						<!--<h3>USIEF-IIE University Fair 2011</h3> -->
+						<table>
+							<tr>
+								<td class="cover-story-image">
+									<!--<img src="./ui/img/cover-story-image-1.jpg" />-->
+								</td>
+								<td class="cover-story-content">
+									<h3>Registration</h3>
+									<p>
+									<ul>
+									<li>Registration forms can be downloaded from the website and submitted before March 30th of the academic year for which admission is sought. Special requests for admission will be considered as and when vacancies arise.
+Dates of written test/interviews will be intimated by email at the time of registration.
+Registration fee is non refundable</li>
+									<li>Dates of written test/interviews will be intimated by email at the time of registration.
+									</li>
+									<li>Registration fee is non refundable
+									</li>
+									</ul>
+									</p>
+									<h3>Entrance test and interview</h3>
+									<p>
+									<ul>
+									<li>There will be a written test for students seeking admission to class I and above. Only those candidates who clear the written test will be called for the interview. The syllabus for the test can be obtained by raising a request through schoolstreet's query form given on our website.
+									</li>
+									<li>The result of the selection procedure will be made available on school website
+									</li>
+									<li>Successful candidates will be required to deposit the school fees by a specified date, failing which the admission shall be cancelled. Fees can be deposited online using schoolstreet online fees portal
+									</li>
+									<li>The birth certificate must be produced in original as proof of date of birth. 
+									</li>
+									<li>The I-card and school-joining instructions shall be issued after completion of admission formalities.
+									</li>
+									</ul>
+									</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+						
+				</div>
+				<div class="sidebar-cover">
+				<div class="sidebar">
+				
+				<div class="side-search">
+						<h2>Search</h2>
+						<form class="search-form">
+							<table>
+								<tr>
+									<td>
+										<select class="search-selectbox" name="search-for-options">
+										<option value="search-school">Search for School</option>
+										<option value="search-student">Search for Student</option>
+										</select>
+										<input type="text" name="date" id="date" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="search-textbox city-input" type="textbox" name="city" value="City" />
+									</td>
+								</tr>
+								<tr>								
+									<td>
+										<input class="search-textbox school-input" type="textbox" name="school" value="Name of the School" />
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+
+				
+				</div>
+				<div class="sidebar">
+					<h2>Notices</h2>
+					<div class="notices">
+						<div class="notice">
+							<h4>9th January 2012</h4>
+							<div class="notice-teaser">
+								First release of the admission form by St Mary SR Nagar
+								<br /><a href="">Book your form now</a>
+							</div>
+						</div>	
+						<div class="notice">
+							<h4>12th January 2012</h4>
+							<div class="notice-teaser">
+								Performance by HANS Foundation at Chirec KinderGardens Kondapur
+								<br /><a href="">Find More</a>
+							</div>
+						</div>	
+						<div class="notice">
+							<h4>15th January 2012</h4>
+							<div class="notice-teaser">
+								Interschool Chess Tournament at St Atulanand (3:30 PM - 5:00 PM)
+								<br /><a href="">Get a seat</a>
+							</div>
+						</div>
+						<div class="notice">
+							<h4>25th January 2012</h4>
+							<div class="notice-teaser">
+								Interschool Chess Tournament at St Atulanand (3:30 PM - 5:00 PM)
+								<br /><a href="">Get a seat</a>
+							</div>
+						</div>
+						<div class="notice">
+							<h4>28th January 2012</h4>
+							<div class="notice-teaser">
+								Students meet at RoadMast
+								<br /><a href="">Find More</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+	</div>
+	<div id="footer">
+			<div id="footer-wrapper">
+				<table class="footline">
+					<tr>
+						<td class="copyright-note">
+							All rights Reserved to schoolstreet.in
+						</td>
+						<td>
+						<div id="footer-menu">
+							<ul>
+								<li><a class="footer-menu-option" href=""><span>Terms & Conditions</span></a></li>
+								<li><a class="footer-menu-option" href=""><span>Our team</span></a></li>
+								<li><a class="footer-menu-option" href=""><span>What we offer</span></a></li>
+							</ul>
+						</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+	</div>
+  </body>
+ </html>
