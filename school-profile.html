@@ -211,8 +211,7 @@
 														</tr>
 														<tr>
 															<td>Session</td>
-															<td>http://my.oracle.com/site/hr/RegionalSites/India/India_Handbook/leave_travel/leave_travel
-
+															<td>
 																<select class="dropdown" name="add-result-session">
 																<option value="">Unit Test</option>
 																<option value="">Quarterly Exam</option>
@@ -272,10 +271,174 @@
 												</div>
 												</p>
 												<p>
-												<a class="blue-dark" href="">Enter Roll Number to view result</a>
+												<a class="modalInput blue-dark"  href="" rel="#view-result-form">Enter Roll Number to view result</a>
+												<div class="modal" id="view-result-form">
+													<h2>View Result</h2>
+													<form action="././core/Result/displayresult.php" target="_blank" method="POST">
+													<table>
+														<tr>
+															<td>Name</td>
+															<td>
+																<input class="" type="textbox" name="name" value="" />
+															</td>
+														</tr>
+														<tr>
+															<td>Roll Number</td>	
+															<td>
+																<input class="" type="textbox" name="roll" value="" />
+															</td>
+														</tr>
+														<tr>
+															<td>Date of Birth</td>	
+															<td>
+																<input class="" type="textbox" name="dob" value="" />
+															</td>
+														</tr>
+														<tr>															
+															<td>Exam Name</td>
+															<td>
+																<select class="dropdown" name="view-result-exam-name">
+																<option value="">Unit Test</option>
+																<option value="">Quarterly Exam</option>
+																<option value="">Annual Exam</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Session</td>
+															<td>
+																<select class="dropdown" name="view-result-session">
+																<option value="">2011-2012</option>
+																<option value="">2010-2011</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Subject</td>
+															<td>
+																<select class="dropdown" name="view-result-subject">
+																<option value="">All</option>
+																<option value="">Physics</option>
+																<option value="">Chemistry</option>
+																<option value="">Biology</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Class</td>
+															<td>
+																<select class="dropdown" name="view-result-class">
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+																<option value="4">4</option>
+																<option value="5">5</option>
+																<option value="6">6</option>
+																<option value="7">7</option>
+																<option value="8">8</option>
+																<option value="9">9</option>
+																<option value="10">10</option>
+																<option value="11">11</option>
+																<option value="12">12</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Section</td>
+															<td>
+																<select class="dropdown" name="view-result-section">
+																<option value="A">A</option>
+																<option value="B">B</option>
+																<option value="C">C</option>
+																<option value="D">D</option>
+																<option value="E">E</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															<input class="submit" type="submit" name="view-result" value="View Result" />
+															</td>
+														</tr>
+													</table>
+													</form>
+												</div>
 												</p>
 												<p>
-												<a class="blue-dark" href="">Enter class to view result</a>
+												<a class="modalInput blue-dark"  href="" rel="#view-class-result-form">Enter class to view result</a>
+												<div class="modal" id="view-class-result-form">
+													<h2>View Result</h2>
+													<form action="././core/Result/class_displayresult.php" target="_blank" method="POST">
+													<table>
+														<tr>															
+															<td>Exam Name</td>
+															<td>
+																<select class="dropdown" name="view-class-result-exam-name">
+																<option value="">Unit Test</option>
+																<option value="">Quarterly Exam</option>
+																<option value="">Annual Exam</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Session</td>
+															<td>
+																<select class="dropdown" name="view-class-result-session">
+																<option value="">2011-2012</option>
+																<option value="">2010-2011</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Subject</td>
+															<td>
+																<select class="dropdown" name="view-class-result-subject">
+																<option value="">All</option>
+																<option value="">Physics</option>
+																<option value="">Chemistry</option>
+																<option value="">Biology</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Class</td>
+															<td>
+																<select class="dropdown" name="view-class-result-class">
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+																<option value="4">4</option>
+																<option value="5">5</option>
+																<option value="6">6</option>
+																<option value="7">7</option>
+																<option value="8">8</option>
+																<option value="9">9</option>
+																<option value="10">10</option>
+																<option value="11">11</option>
+																<option value="12">12</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>Section</td>
+															<td>
+																<select class="dropdown" name="view-class-result-section">
+																<option value="A">A</option>
+																<option value="B">B</option>
+																<option value="C">C</option>
+																<option value="D">D</option>
+																<option value="E">E</option>
+																</select>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															<input class="submit" type="submit" name="view-class-result" value="View Result" />
+															</td>
+														</tr>
+													</table>
+													</form>
+												</div>
 												</p>
 										</td>
 																				
