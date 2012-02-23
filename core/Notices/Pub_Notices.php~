@@ -35,7 +35,7 @@
 	$CKEditor->replace("editor",$config);
 	$sms="";
 	require_once "../../init.php";
-	
+	session_start();
 	if($_SESSION['usertype']<=TEACHER){
 		echo '<p class="form-label"><input type= "checkbox" id = "sms" name="sms" />Send SMS/Email to parents</p>';
 		echo '<input type="hidden" id = "author" name="author" value="'.$_SESSION['uid'].'"/>';	

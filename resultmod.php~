@@ -1,6 +1,7 @@
 <html>
 <?php
 	require_once "init.php"; 
+	session_start();
 	$_SESSION['uid'] = 2;
 	$_SESSION['schoolid'] = 1;
 	$_SESSION['usertype'] = SCHOOL_ADMIN;

@@ -6,7 +6,7 @@
 	$publish = "";
 	$ctr = $_GET['ctr'];
 	if($_SESSION['usertype']<=TEACHER){
-		$publish = '<a class="blue-dark" href="core/Notices/Pub_Notices.php">PUBLISH NEW NOTICE</a>';
+		$publish = '<a href="core/Notices/Pub_Notices.php">PUBLISH NEW NOTICE</a>';
 	}
 	$schoolid = $_SESSION['schoolid'];
 	$school = "";
@@ -41,7 +41,7 @@
 			<td class="thick-top-border">'.$publish.'
 			</td>
 			<td class="thick-top-border">
-				<a class="blue-dark" href="core/News/DisplayNews.php?newsid=ALL"> FIND MORE STORIES </a>
+				<a href="core/News/DisplayNews.php?newsid=ALL"> FIND MORE STORIES </a>
 			</td>
 		</tr>';
 	

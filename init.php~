@@ -27,7 +27,7 @@
 	 * Login status
 	**/
 	
-	define('NOT_LOGGED_IN',-1);
+	define('NOT_LOGGED_IN',9);
 	
 	/**
 	 *	Misc

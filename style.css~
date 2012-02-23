@@ -645,4 +645,6 @@ blockquote:first-child:before
 	text-align: center;	
 }
 
-/* Pad 5px */.padding5 {	padding: 5px;}.margin5 {	margin: 5px;}.full {	width: 100%;}.bold {	font-weight: bold;}.large {	font-size: large;}.underline {	text-decoration: underline;}	.italic {	font-style: italic;}
+.right {
+	text-align: right;
+}/* Pad 5px */.padding5 {	padding: 5px;}.margin5 {	margin: 5px;}.full {	width: 100%;}.bold {	font-weight: bold;}.large {	font-size: large;}.underline {	text-decoration: underline;}	.italic {	font-style: italic;}
