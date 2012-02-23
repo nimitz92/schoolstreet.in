@@ -1,9 +1,4 @@
-<html>
-	<head>
-		<title>Tutorial Details</title>
-		<link rel="stylesheet" type="text/css" href="../../style.css"></link>
-	</head>
-	<body>
+
 <?php
 	require_once "../../init.php";
 	if(!isset($_GET['tutid'])){
@@ -20,7 +15,7 @@
 		echo "Error in database @ Display_Tutorial.php.".$mysql->getError();
 		exit;
 	}
-	echo '<p class="large center bold">Tutorial</div><hr />';
+	echo '<p class="large center bold">Tutorial(s)</div><hr />';
 	foreach($tutorials as $story){
 		if($story['webpublishing']==0){
 				$content = '<a href = "Download.php?tutid='.$story['tutid'].'">Download File</a>';
@@ -37,5 +32,5 @@
 	}
 
 ?>
-	<body>
+	</body>
 </html>

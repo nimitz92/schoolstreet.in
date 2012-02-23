@@ -1,9 +1,3 @@
-<html>
-	<head>
-		<title>Tutorial Details</title>
-		<link rel="stylesheet" type="text/css" href="../../style.css"></link>
-	</head>
-	<body>
 <?php
 	require_once "../../init.php";
 	if(!isset($_GET['tutid'])){
@@ -37,5 +31,5 @@
 	}
 
 ?>
-	<body>
+	</body>
 </html>

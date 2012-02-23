@@ -1,9 +1,9 @@
-/*@import url("http://fonts.googleapis.com/css?family=Marmelad");*/
+@import url("http://fonts.googleapis.com/css?family=Marmelad");
 
 body
 {
 	font-family: Verdana, Arial, " Times New Roman ";
-	font-size: 13px;
+	font-size: 11px;
 	line-height:20px;
 	margin:0px;
 	padding:0px;
@@ -393,14 +393,14 @@ blockquote:first-child:before
 
 #slider-wrapper
 {
-	background: url('./ui/img/slider/slider-1.jpg');
+	background: url('./images/slider/slider-1.jpg');
 	height:100%;
 	width:100%;
 }
 
 .search
 {
-	background: url('./ui/img/search-bck.png') repeat;
+	background: url('./images/search-bck.png') repeat;
 	width:305px;
 	height:100%;
 	float:left;
@@ -637,12 +637,3 @@ blockquote:first-child:before
 		-moz-box-shadow: 0 0 50px #ccc;
 		-webkit-box-shadow: 0 0 50px #ccc;
 	}
-	
-/* Default Styles */
-
-/* Hiding content */.hidden {	display: none;}/* Text align */.left {	text-align: left;}
-.center {
-	text-align: center;	
-}
-
-/* Pad 5px */.padding5 {	padding: 5px;}.margin5 {	margin: 5px;}.full {	width: 100%;}.bold {	font-weight: bold;}.large {	font-size: large;}.underline {	text-decoration: underline;}	.italic {	font-style: italic;}
