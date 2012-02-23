@@ -25,8 +25,11 @@ case 'get_in_touch': $intouch_selected = 'selected';
 <div id="primary-menu">
 	<ul class="primary-menu-list">
 		<li class="primary-menu-list-element"><a class="primary-menu-href <?php echo $home_selected;?>" href="school-profile.php"><span>Homepage</span></a></li>
-
+<<<<<<< HEAD
 		<li class="primary-menu-list-element news"><a class="primary-menu-href news <?php echo $news_selected;?>" href=""><span>News</span></a>
+=======
+		<li class="primary-menu-list-element"><a class="primary-menu-href news <?php echo $news_selected;?>" href=""><span>News</span></a>
+>>>>>>> bb6f6215bca26f41a55cbc649eefa8d6257c2fc3
 		
 			<?php include 'submenu-news.php' ?>
 		
