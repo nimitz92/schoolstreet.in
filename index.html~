@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+            <title>The School Street</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="css/style_pages_ie.css" />
+    <![endif]-->
+	<link type="text/css" href="./ui/js/jquery-ui-1.8.17/css/ui-lightness/jquery-ui-1.8.17.custom.css" rel="Stylesheet" />	
+	<script type="text/javascript" src="./ui/js/jquery-ui-1.8.17/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="./ui/js/jquery-ui-1.8.17/js/jquery-ui-1.8.17.custom.min.js"></script>
+	<!--<script src="http://cdn.jquerytools.org/1.2.6/jquery.tools.min.js"></script>-->
+	<script type="text/javascript" src="./ui/js/jquery-menu.js"></script>
+	
+
+
+  </head>
+  <body>
+	<div id="page">
+		<div id="page-wrapper">
+			<div id="head">
+				<h1>the School Street<h1>
+			</div>
+			<div id="primary-menu">
+				<ul class="primary-menu-list">
+					<li class="primary-menu-list-element"><a class="primary-menu-href selected" href="index.html"><span>Frontpage</span></a></li>
+					<li class="primary-menu-list-element news"><a class="primary-menu-href news" href="">
+					
+						<span>News</span></a>
+						<div id="submenu">
+							<div class="submenu-wrapper">
+								<h2>Recent News(School Street)</h2>
+								<div class="submenu-content">
+								<table class="submenu-columns-news">
+									<tr class="top">
+										<td class="left crop">
+											<span></span><img class="news-thumbnail" src="./ui/img/news-images/news-image-1.jpg" />
+										</td>
+										<td class="right">
+										</td>
+																				
+									</tr>
+									<tr class="bottom">
+										<td>
+										</td>
+										<td class="thick-top-border">
+											<a href=""> FIND MORE STORIES </a>
+										</td>
+									</tr>
+								</table>
+								
+								</div>
+							</div>	
+						</div>
+					
+					</li>
+						
+					<li class="primary-menu-list-element"><a class="primary-menu-href" href="ConnectWithUs.html"><span>Connect with Us</span></a></li>
+					<li class="primary-menu-list-element"><a class="primary-menu-href" href=""><span>School Forums</span></a></li>
+					<li class="primary-menu-list-element"><a class="primary-menu-href" href="WhoWeAre.html"><span>Who are we</span></a></li>
+					<li class="primary-menu-list-element"><a class="primary-menu-href" href=""><span>Get In Touch</span></a></li>
+				</ul>
+			</div>
+			<div id="slider">
+				<div id="slider-wrapper">
+					<div class="search">
+						<h2>Search</h2>
+						<form class="search-form">
+							<table>
+								<tr>
+									<td>
+										<select class="search-selectbox" name="search-for-options">
+										<option value="search-school">Search for School</option>
+										<option value="search-student">Search for Student</option>
+										</select>
+										<input type="text" name="date" id="date" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="search-textbox city-input" type="textbox" name="city" value="City" />
+									</td>
+								</tr>
+								<tr>								
+									<td>
+										<input class="search-textbox school-input" type="textbox" name="school" value="Name of the School" />
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="content">
+				<div class="content-main">
+					<h2>Who We Are</h2>
+					<div class="cover-story">
+						<!--<h3>USIEF-IIE University Fair 2011</h3> -->
+						<table>
+							<tr>
+								<td class="cover-story-image">
+									<!--<img src="./ui/img/cover-story-image-1.jpg" />-->
+								</td>
+								<td class="cover-story-content">
+									<p>
+									Schoolstreet provides online services for school management. This platform takes the schools to the next altitude where students, administration, parents can exchange and access information on a click. 
+									</p>
+									<p>
+									Starting from school website management, we provide services covering admissions, students&#39; and teachers&#39; online profile management, online result generation and publication, online fee submission, internal messaging system, automated SMS notifications to parents, hosting online quizes and on-demand administrative tools for information sharing and school management. Move to the next generation of schooling with technology!!
+									<!--<a class="readmore" href="">Read More</a>-->
+									</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+					<h2>Standout students (Jan 2012)</h2>
+					<div class="standout-students">
+						<table class="cover-students">
+							<tr>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-1.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-2.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-3.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-4.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-5.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-6.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-7.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-8.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-1.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-2.jpg"></a><td>
+							</tr>
+							<tr>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-2.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-1.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-8.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-7.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-6.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-5.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-4.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-3.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-2.jpg"></a><td>
+								<td><a href=""><img src="./ui/img/profile-pics/profile-pic-1.jpg"></a><td>
+							</tr>
+						</table>
+					</div>	
+				</div>
+				
+				<div class="sidebar-cover">
+				<div class="sidebar">
+					<h2>On the cards</h2>
+					<div class="notices">
+						<div class="notice">
+							<h4>9th January 2012</h4>
+							<div class="notice-teaser">
+								First release of the admission form by St Mary SR Nagar
+								<br /><a href="">Book your form now</a>
+							</div>
+						</div>	
+						<div class="notice">
+							<h4>12th January 2012</h4>
+							<div class="notice-teaser">
+								Performance by HANS Foundation at Chirec KinderGardens Kondapur
+								<br /><a href="">Find More</a>
+							</div>
+						</div>	
+						<div class="notice">
+							<h4>15th January 2012</h4>
+							<div class="notice-teaser">
+								Interschool Chess Tournament at St Atulanand (3:30 PM - 5:00 PM)
+								<br /><a href="">Get a seat</a>
+							</div>
+						</div>
+						<div class="notice">
+							<h4>25th January 2012</h4>
+							<div class="notice-teaser">
+								Interschool Chess Tournament at St Atulanand (3:30 PM - 5:00 PM)
+								<br /><a href="">Get a seat</a>
+							</div>
+						</div>
+						<div class="notice">
+							<h4>28th January 2012</h4>
+							<div class="notice-teaser">
+								Students meet at RoadMast
+								<br /><a href="">Find More</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+	</div>
+	<div id="footer">
+			<div id="footer-wrapper">
+				<table class="footline">
+					<tr>
+						<td class="copyright-note">
+							All rights Reserved to schoolstreet.in
+						</td>
+						<td>
+						<div id="footer-menu">
+							<ul>
+								<li><a class="footer-menu-option" href=""><span>Terms & Conditions</span></a></li>
+								<li><a class="footer-menu-option" href=""><span>Our team</span></a></li>
+								<li><a class="footer-menu-option" href=""><span>What we offer</span></a></li>
+							</ul>
+						</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+	</div>
+  </body>
+ </html>

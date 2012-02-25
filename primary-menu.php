@@ -1,0 +1,41 @@
+<?php 
+$home_selected = '';
+$news_selected = '';
+$connect_selected = '';
+$forum_selected = '';
+$we_selected = '';
+$intouch_selected = '';
+switch($primary_selected)
+{
+case 'home': $home_selected = 'selected';
+			 break;
+case 'news': $news_selected = 'selected';
+			 break;
+case 'connect': $connect_selected = 'selected';
+			 break;
+case 'forum': $forum_selected = 'selected';
+			 break;
+case 'services': $services_selected = 'selected';
+			 break;
+case 'get_in_touch': $intouch_selected = 'selected';
+			 break;
+};
+
+
+?>
+
+<div id="primary-menu">
+	<ul class="primary-menu-list">
+		<li class="primary-menu-list-element"><a class="primary-menu-href <?php echo $home_selected;?>" href="index.php"><span>Frontpage</span></a></li>
+		<li class="primary-menu-list-element"><a class="primary-menu-href news <?php echo $news_selected;?>" href=""><span>News</span></a>
+		
+			<?php include 'submenu-news.php' ?>
+		
+		</li>
+			
+		<li class="primary-menu-list-element"><a class="primary-menu-href <?php echo $connect_selected;?>" href="ConnectWithUs.php"><span>Connect with Us</span></a></li>
+		<li class="primary-menu-list-element"><a class="primary-menu-href <?php echo $forum_selected;?>" href=""><span>Forums</span></a></li>
+		<li class="primary-menu-list-element"><a class="primary-menu-href <?php echo $services_selected;?>" href="Services.php"><span>Services</span></a></li>
+		<li class="primary-menu-list-element"><a class="primary-menu-href <?php echo $intouch_selected;?>" href="GetInTouch.php"><span>Get In Touch</span></a></li>
+	</ul>
+</div>

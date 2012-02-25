@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+<div id="submenu">
+	<div class="submenu-wrapper">
+		<h2>Recent News(Delhi Public School)</h2>
+		<div class="submenu-content">
+		<table class="submenu-columns-news">
+			<tr class="top">
+				<td class="left crop">
+					<span></span><img class="news-thumbnail" src="./ui/img/news-images/news-image-1.jpg" />
+				</td>
+				<td class="right"></td>										
+			</tr>
+			<tr class="bottom">
+				<td><p></p></td>
+			</tr>
+		</table>
+		
+		</div>
+	</div>	
+</div>
+=======
+<div id="submenu">	<div class="submenu-wrapper">		<h2>Recent News(School Street)</h2>		<div class="submenu-content">		<table class="submenu-columns-news">			<tr class="top">				<td class="left crop">					<span></span><img class="news-thumbnail" src="./images/news-images/news-image-1.jpg" />				</td>				<td class="right">					<ul class="submenu-list">						<li class="submenu-list-element">							<div class="sub-story">							<a class="submenu-href" href="">USIEF-IIE University Fair 2011</a>							<div class="substory-content">								The much awaited USIEF fair kicked of the on right footing. More than expected aspirants ...							</div>								</div>						</li>						<li class="submenu-list-element">							<div class="sub-story">							<a class="submenu-href" href="">Behaviour Management and Discipline Strategy</a>							<div class="substory-content">								The Behaviour Management and Discipline (BM&D) strategy is an initiative of the Government and the Department of Education and Training and has been established through strong collaboration with the Australian Education Union, Western Australian branch. 							</div>								</div>						</li>						<li class="submenu-list-element">							<div class="sub-story">							<a class="submenu-href" href="">USIEF-IIE University Fair 2011</a>							<div class="substory-content">								The much awaited USIEF fair kicked of the on right footing. More than expected aspirants ...							</div>								</div>						</li>											</ul>				</td>																	</tr>			<tr class="bottom">				<td>				</td>				<td class="thick-top-border">					<a href=""> FIND MORE STORIES </a>				</td>			</tr>		</table>				</div>	</div>	</div>
+>>>>>>> bb6f6215bca26f41a55cbc649eefa8d6257c2fc3

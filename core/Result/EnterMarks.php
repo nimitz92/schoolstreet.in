@@ -15,7 +15,7 @@
 	$maxmarks = $_POST['maxmarks'];
 	$date = $_POST['doe'];
 	
-	$result = $mysql->getResult("insert into exams (examname, session, class, section, subject, maxmarks, examtime) values('$examname', '$session', $class, '$section', $subject, $maxmarks, $date);",true);
+	$result = $mysql->getResult("insert into exams (examname, session, class, section, subject, maxmarks, examtime) values('$examname', '$session', $class, '$section', $subject, $maxmarks, '$date');",true);
 	if($result===false){
 		echo "Error in Database @ (1).EnterMarks.php ".$mysql->getError();
 		exit;

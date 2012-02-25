@@ -1,0 +1,7 @@
+<link rel="stylesheet" type="text/css" href="././style.css" ></link>
+<p class="center bold large">Publish New Tutorial</p>
+<form action="././core/Tutorial/Pub_Tutorial.php" method="GET">
+<input type="radio"  name="type" value="upload" id="upload" checked="checked" /><label for="upload">Upload as File</label> <br />
+<input type="radio"  name="type" value="publish" id = "publish" /><label for="publish"> Publish on Site</label><br /><br />
+<input type="submit" value="Proceed!" />
+</form>

@@ -393,14 +393,14 @@ blockquote:first-child:before
 
 #slider-wrapper
 {
-	background: url('./ui/img/slider/slider-1.jpg');
+	background: url('./images/slider/slider-1.jpg');
 	height:100%;
 	width:100%;
 }
 
 .search
 {
-	background: url('./ui/img/search-bck.png') repeat;
+	background: url('./images/search-bck.png') repeat;
 	width:305px;
 	height:100%;
 	float:left;

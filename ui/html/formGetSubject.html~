@@ -1,0 +1,11 @@
+<form>
+<p class="center italic">Subject<br />
+<select name="subject">
+		<option value="1">English</option>
+		<option value="2">Hindi</option>
+		<option value="3">Maths</option>
+		<option value="4">Science</option>
+		<option value="5">Social Science</option>
+</select></p>
+<input type="submit" value="Submit"/>
+</form>
