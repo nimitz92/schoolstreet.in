@@ -1,4 +1,34 @@
 <!DOCTYPE HTML>
+<?php
+	require_once "../../init.php";
+	
+	$school = $_SESSION['schoolid'];
+	$name = $_POST['name'];
+	$roll = $_POST['roll'];
+	$examname = $_POST['view-result-exam-name'];
+	$session = $_POST['view-result-session'];
+	$class = $_POST['view-result-class'];
+	$section = $_POST['view-result-section'];
+	$subject = $_POST['view-result-subject'];
+	$dob = $_POST['dob'];
+	
+	$student = $mysql->getStudent("select stuid from students where name=$name, rollno=$roll, dob=$dob, class=$class, section=$section");
+	$examid = $mysql->getStudent("select examid from exams where examname=$examname, class=$class, section=$section");
+	if($student===false && $examid===false){
+		echo "Error in Database".$mysql->getError();
+		exit;
+	}
+	if($subject=='All'){
+		$marks = $mysql->getResult("select sum(marksobtained) from results where stuid=$student, examid=$examid");
+		$average = $marks/$mysql->getTotalSubjects("select count(stuid) from results where stuid=$student");
+	}
+	else {
+		$subid = $mysql->getSubject("select subid from subjects where name=$subject");
+		$examid = $mysql->getSubject("select examid from subjects where subject=$subid");
+		$marks = $mysql->getResult("select sum(marksobtained) from results where stuid=$student, examid=$examid");
+		$average = $marks;
+	}
+?>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -161,9 +191,16 @@
 								<td class="cover-story-image">
 								</td>
 								<td class="cover-story-content">
-									<p>Welcome to Example Public School, a world of learning possibilities and opportunities. At EPS, we encourage a positive attitude towards learning and the development of a life long love for knowledge.
-									</p>
-									<p>Within the domain of each student&#39;s unique strengths and competencies, we aim to provide meaningful educational experiences, develop skills and nurture constructive attitudes thereby allowing for the full expression of academic, physical and creative talents.We look upon the school as an extension of the home in terms of the nurturing it provides to the young and a portal to the outside world in as much as it prepares our students to actively apply their learning to real life situations.
+									<p>
+										<p>Name : <?php echo $name ?></p>
+										<p>Class : <?php echo $class ?></p>
+										<p>Section : <?php echo $section ?></p>
+										<p>Roll Number : <?php echo $roll ?></p>
+										<p>Date of Birth : <?php echo $dob ?></p>
+										<p>Examination : <?php echo $examname ?></p>
+										<p>Subjects : <?php echo $subject ?></p>
+										<p>Marks : <?php echo $marks ?></p>
+										<p>Average : <?php echo $average ?></p>
 									<br /><br />
 									<a class="readmore" href="school-admission.html">How to get Admission</a>
 									</p>
