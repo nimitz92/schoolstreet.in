@@ -37,10 +37,10 @@
 						
 						</p>
 						<p>
-						<a class="blue-dark" href="">Enter Roll Number to view result</a>
+						<a class="blue-dark" href="view-result.php">Enter Roll Number to view result</a>
 						</p>
 						<p>
-						<a class="blue-dark" href="">Enter class to view result</a>
+						<a class="blue-dark" href="view-class-result.php">Enter class to view result</a>
 						</p>
 				</td>
 														
