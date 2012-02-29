@@ -12,5 +12,31 @@
 	**/
 	$mysql = new Mysql($mysql_database, $mysql_user, $mysql_pass, $mysql_host);
 	
+	/**
+	 *	User Types
+	**/
+	define('ADMIN',1);
+	define('SCHOOL_ADMIN',2);
+	define('CLASS_TEACHER',3);
+	define('TEACHER',4);
+	define('STUDENT',5);
+	define('PARENT',6);
+	define('GUEST',7);
+	
+	/**
+	 * Login status
+	**/
+	
+	define('NOT_LOGGED_IN',-1);
+	
+	/**
+	 *	Misc
+	**/
+	define('ALL',-2);
+	
+	session_start();
+	$_SESSION['uid'] = 2;
+	$_SESSION['schoolid'] = 1;
+	$_SESSION['usertype'] = SCHOOL_ADMIN;
 	
 ?>

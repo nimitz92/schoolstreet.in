@@ -25,7 +25,8 @@ case 'get_in_touch': $intouch_selected = 'selected';
 <div id="primary-menu">
 	<ul class="primary-menu-list">
 		<li class="primary-menu-list-element"><a class="primary-menu-href <?php echo $home_selected;?>" href="school-profile.php"><span>Homepage</span></a></li>
-		<li class="primary-menu-list-element"><a class="primary-menu-href news <?php echo $news_selected;?>" href=""><span>News</span></a>
+		<li class="primary-menu-list-element"><a class="primary-menu-href <?php echo $we_selected;?>" href=""><span>About School</span></a></li>
+		<li class="primary-menu-list-element news"><a class="primary-menu-href news <?php echo $news_selected;?>" href=""><span>News</span></a>
 		
 			<?php include 'submenu-news.php' ?>
 		
@@ -33,7 +34,6 @@ case 'get_in_touch': $intouch_selected = 'selected';
 			
 		
 		<li class="primary-menu-list-element"><a class="primary-menu-href <?php echo $forum_selected;?>" href=""><span>School Forums</span></a></li>
-		<li class="primary-menu-list-element"><a class="primary-menu-href <?php echo $we_selected;?>" href=""><span>About School</span></a></li>
 		<li class="primary-menu-list-element"><a class="primary-menu-href <?php echo $intouch_selected;?>" href="GetInTouch.php"><span>Contact School</span></a></li>
 	</ul>
 </div>
