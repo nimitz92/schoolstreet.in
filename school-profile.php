@@ -105,7 +105,7 @@
 				</div>
 				<div class="sidebar-cover">
 				
-				<?php include 'notices-block.php' ?>
+				<?php include 'notices-block-school.php' ?>
 				
 				</div>
 			</div>
