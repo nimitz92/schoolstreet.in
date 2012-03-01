@@ -1,6 +1,8 @@
 <div id="submenu">
 	<div class="submenu-wrapper">
-		<h2>Recent News(Delhi Public School)</h2>
+
+		<h2>Recent News(Example Public School)</h2>
+
 		<div class="submenu-content">
 		<table class="submenu-columns-news">
 			<tr class="top">

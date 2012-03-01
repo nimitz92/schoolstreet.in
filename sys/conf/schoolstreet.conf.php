@@ -10,7 +10,7 @@
 	**/
 	$mysql_database 		= 	"schoolstreet";
 	$mysql_user 			= 	"root";
-	$mysql_pass 			= 	"shivang";
+	$mysql_pass 			= 	"public123";
 	$mysql_host 			= 	"localhost";
 	
 	/**

@@ -1,1 +1,1 @@
-<div id="head">	<table>	<tr>		<td>		<h1 class="not-on-front-page"><a href="index.html">the School Street</a><h1>		</td>		<td>		</td>	</tr>	<tr>		<td colspan="2">		<h5><a href="school-profile.html">Delhi Public School</a></h5>		</td>	</tr>	</table></div>
+<div id="head">	<table>	<tr>		<td>		<h1 class="not-on-front-page"><a href="index.html">the School Street</a><h1>		</td>		<td>		</td>	</tr>	<tr>		<td colspan="2">		<h5><a href="school-profile.html">Example Public School</a></h5>		</td>	</tr>	</table></div>
